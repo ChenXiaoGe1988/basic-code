@@ -11,7 +11,7 @@ public interface ClassInInterface {
     {
         @Override
         public void howday() {
-            System.out.println("Howdy!!!");
+            System.out.println("Howdy!!!!");
         }
 
         public static void main(String[] args) {
