@@ -1,0 +1,176 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+    </head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <body>
+        <style>
+           .solid{
+                border-style: solid;
+            }
+            .dotted{
+                border-style: dotted;
+            }
+            .dashed{
+                border-style: dashed;
+            }
+            .double{
+                border-style: double;
+            }
+            .red{
+                border-style: solid;
+                border-color: red;
+                /*边框宽度*/
+                border-width: 1px;
+            }
+            .Chen{
+                border: 5px dotted lightskyblue;
+                background-color: green;
+                /*左边距*/
+                /*padding-left:50px;*/
+                /*四个方向的内边距*/
+                padding:10 20 30 40;
+            }
+            .ckb{
+                border:1px solid red;
+                background-color: green;
+            }
+            .margin{
+                border:1px solid red;
+                background-color: green;
+                margin-left: 10px;
+            }
+            /*div{
+                widows: 150px;
+                height: 150px;
+                border-top-style: solid;
+                border-top-color: red;
+                border-top-width: 50px;
+                background-color: antiquewhite;
+            }*/
+            div.alldirection{
+                width:150px;
+                height:150px;
+                border-top-style: solid;
+                border-top-color: red;
+                border-top-width: 50px;
+                border-left-style:solid;
+                border-left-color:blue;
+                border-left-width: 50px;  
+                border-bottom-style:solid;
+                border-bottom-color:green;
+                border-bottom-width: 50px;
+                border-right-style:solid;
+                border-right-color:yellow;
+                border-right-width:50px;
+                background-color: lightcoral;
+            }
+            table{
+                border-collapse: collapse;
+                width: 90%;
+            }
+            tr.odd{
+                background-color: #f8f8f8;
+            }
+            tr.head{
+                border-bottom-style: 2px;
+            }
+            tr{
+                border-bottom-style: solid;
+                border-bottom-width:1px;
+                border-bottom-color: lightgray;
+                height:35px;
+                }
+                td{
+                    width:25%;
+                    text-align: center;
+                }
+            .box{
+                width:70px;
+                padding:5px;
+                margin: 10px;
+            }
+            div{
+                border:1px solid gray;
+                font-size:70%;
+            }
+            a:link{color:#FF0000;}
+            a:visited{color:#00FF00}
+            a:hover{color:#FF00FF}
+            a:active{color:#0000FF}
+            /*去除了下划线的超链*/
+            a.no_underline{text-decoration: none;}
+        </style>
+        <!--超链状态-->
+        <a class="no_underline" href="http://www.12306.com">超链的不同状态</a><br/>
+        <!--边框风格-->
+        <div>默认无边框</div><br/>
+        <div class="solid">实线边框</div><br/>
+        <div class="dotted">点状边框</div><br/>
+        <div class="dashed">虚线边框</div><br/>
+        <div class="double">双线边框</div><br/>
+        <!--边框颜色-->
+        <div>默认无边框</div><br/>
+        <div class="red">实线红色框</div><br/>
+        <div class="Chen">点状天蓝色细边框</div><br/>
+        <!--单方向边框-->
+        <!--<div>只有上面有边框</div>-->
+        <!--有交界的边都有边框-->
+        <div class="alldirection">
+            四边都有边框
+        </div><br/>
+        <!--表格斑马线-->
+        <table>
+            <tr class="head">
+                <td>id</td>
+                <td>名称</td>
+                <td>血量</td>
+                <td>伤害</td>
+            </tr>
+            <tr class="odd">
+                <td>1</td>
+                <td>gareen</td>
+                <td>340</td>
+                <td>58</td>
+             </tr>
+             <tr class="even">
+                <td>2</td>
+                <td>teemo</td>
+                <td>320</td>
+                <td>76</td>
+             </tr>
+             <tr class="odd">
+                <td>3</td>
+                <td>annie</td>
+                <td>380</td>
+                <td>38</td>
+             </tr>
+             <tr class="even">
+                <td>4</td>
+                <td>deadbrother</td>
+                <td>400</td>
+                <td>90</td>
+             </tr>
+        </table><br/>
+        <span class="ckb">无外边距的span</span>
+        <span class="ckb">无外边距的span</span><br/>
+        <span class="ckb">无外边距的span</span>
+        <span class="margin">有外边距的span</span><br/>
+        <!--边框模型-->
+        <div>KPL职业联赛</div>
+        <div class="box">内容宽度70px<br><br>
+            内边距：50px<br><br>
+            外边距: 10px<br>
+        </div>
+        <div>2020</div><br/>
+        <p class="p1">红色</p>
+        <span class="span1">蓝色</span><br/>
+        
+        <p >正常文字1</p>
+        <p >正常文字2</p>
+        <p class="abs" >绝对定位的文字3</p>
+        <p >正常文字4</p>
+        <p >正常文字5</p>
+
+    </body>
+</html>

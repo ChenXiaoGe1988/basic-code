@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="jquery.min.js"></script>
+        <script>
+            $(function(){
+                /*$("#b1").click(function(){
+                    //根据标签名选择元素
+                    $("div").addClass("pink");
+                    //$("id") 根据id选择元素
+                    //$("id").addClass("pink");
+                    //$(".className")
+                    //$(".d").addClass("pink");
+                });*/
+                //$("select1 select2")
+                /*$("#b2").click(function(){
+                    $("div#d3 span").addClass("pink");
+                });*/
+                /*
+                $("#b1").click(function(){
+                    $("div:first").addClass("pink");
+                });*/
+                //奇数元素背景
+                /*$("#b1").click(function(){
+                    $("div:odd").toggleClass("pink");
+                });
+                //偶数元素背景
+                $("#b2").click(function(){
+                    $("div:even").toggleClass("green");
+                });*/
+                //隐藏的
+                $("#b1").click(function(){
+                    $("div:visible").hide();
+                });
+                //显示可见的
+                $("#b2").click(function(){
+                    $("div:hidden").show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <!--<button id="b1">给所有的div元素增加背景色</button>
+        <br><br>
+        <style>
+            .pink{
+                background-color: pink;
+            }
+        </style>
+        <div>Code Chen</div>
+        <div>Code Chen</div>
+        <div>Code Chen</div>
+        <br><br>-->
+
+        <!--最先最后-->
+        <!--<button id="b1">第一个增加背景色</button>
+        <br><br>
+        <style>
+            .pink{
+                background-color: pink;
+            }
+            .green{
+                background-color: green;
+            }
+        </style>
+        <div><span>Code Chen</span></div>
+        <div><span>Code Chen</span></div>
+        <div><span>Code Chen</span></div>
+        <br><br>-->
+        <!--奇数偶数背景切换-->
+        <!--<button id="b1">切换奇数背景色</button>
+        <button id="b2">切换偶数背景色</button>
+        <br><br>
+        <style>
+            .pink{
+                background-color: pink;
+            }
+            .green{
+                background-color: green;
+            }
+        </style>
+        <div><span>Code Chen</span></div>
+        <div><span>Code Chen</span></div>
+        <div><span>Code Chen</span></div>
+        <div><span>Code Chen</span></div>
+        <div><span>Code Chen</span></div>
+        <div><span>Code Chen</span></div>
+        <br><br>-->
+        <button id="b1">隐藏可见的</button>
+        <button id="b2">显示不可见的</button>
+        <br><br>
+        <style>
+            .pink{
+                background-color: pink;
+            }
+        </style>
+        <div><span>Code Chen 1</span></div>
+        <div><span>Code Chen 2</span></div>
+        <div><span>Code Chen 3</span></div>
+        <div><span>Code Chen 4</span></div>
+        <div><span>Code Chen 5</span></div>
+        <div><span>Code Chen 6</span></div>
+        <br><br>
+    </body>
+</html>

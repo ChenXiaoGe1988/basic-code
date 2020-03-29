@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--document是javascript的内置对象，代表浏览器的文档部分-->
+        <!--document.write("Hello");向文档写入字符串 -->
+        <script src="hello.js"></script><br/><br/>
+    </head>
+    <body>
+        <div>
+        <p >正常文字1</p>
+        <p >正常文字2</p>
+        <p class="abs" >绝对定位的文字3</p>
+        <p >正常文字4</p>
+        <p >正常文字5</p>
+        </div>
+        <!--z-index 当z-index的值越大，就表示放上面，z-index:越小就表示放下面-->
+        <img id="i1" src="https://how2j.cn/example.gif"/>
+        <img id="i2" src="https://how2j.cn/example.gif"/>
+        <br/>
+        <br/>
+        <p>正常文字1</p>
+        <p>正常文字2</p>
+        <p class="r">相对定位的文字3</p>
+        <p>正常文字4</p>
+        <p>正常文字5</p>
+        <div >正常文字1</div>
+        <div >正常文字2</div>
+        <div class="f">浮动的文字</div>
+        <div >正常文字4</div>
+        <div >正常文字5</div>
+        <!--onclick="..."表示点击button之后做的事情-->
+        <!--document.getElementById 根据ID获取指定的元素-->
+        <!--.style.display='none' 隐藏-->
+        <!--.style.display='block' 显示（以block的形式显示）-->
+        <button onclick="document.getElementById('text').style.display='none'">隐藏文本</button>
+        <button onclick="document.getElementById('text').style.display='block'">显示文本</button>
+        <p id="text">这个是一段可以被javascript隐藏的文本</p>
+    </body>
+</html>

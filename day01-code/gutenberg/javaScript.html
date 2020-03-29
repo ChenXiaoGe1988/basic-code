@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <script src="hello.js"></script><br/>
+        <script>
+            var x=10;//var可有可无,var表示动态类型（当值是整数是，就是Number类型，当值是字符串时，就是String类型）
+            //x=100;
+            var y=10;//声明了变量y,但是没有赋值,默认值为undefined
+            //alert(1);
+            document.write("变量X的值："+x);
+            document.write("<br>");
+            //alert(2);
+            document.write("变量y的值："+y);
+            document.write("<br>");
+            //var a=10;//十进制
+            //var b=012;//八进制
+            //var c=0xA;//十六进制
+            //var d=3.14;//浮点数
+            var e=3.14e2;//科学计数法
+            document.write("科学技术法3.14e2的值："+e);
+            document.write("<br>");
+            //javascript中没有字符的概念，只有字符串，所以单引号和双引号都用来表示字符串
+            var h="hello";
+            var j='javascript';
+            document.write(h);
+            document.write("<br>");
+            document.write(j);
+            document.write("<br>");
+            //使用typeof来进行变量类型判断 
+            var ckb;
+            document.write(typeof ckb);
+            document.write("<br>");
+            ckb="CodeChen";
+            document.write(typeof ckb);
+            document.write("<br>");
+            //变量ckb的长度
+            document.write(ckb.length);
+            document.write("<br>");
+            //用toString方法来将Number,boolean,String转换为字符串
+            //String()和toString()区别在于对null的处理
+            //String()会返回字符串"null"
+            //toString()就会报错，无法执行
+            var c=true;
+            document.write("布尔 "+c+"转换为字符串"+c.toString());
+            document.write("<br>");
+            var d=10;
+            document.write(d.toString());//十进制
+            document.write("<br>");
+            document.write(d.toString(2));//二进制
+            document.write("<br>");
+            document.write(d.toString(8));//八进制
+            document.write("<br>");
+            document.write(d.toString(16));//十六进制
+            document.write("<br>");
+            //函数parseInt()和parseFloat()转换整数和浮点数
+            //函数Number()当转换的内容包含非数字时会返回NaN
+            document.write(parseInt("10"));
+            document.write("<br>");
+            document.write(parseFloat("3.14"));
+            document.write("<br>");
+            document.write(parseInt("100abcd"));
+            document.write("<br>");
+            //如果不包含数字就返回NaN
+            document.write(parseInt("Code Chen"));
+            document.write("<br>");
+            //函数Boolean()转换为Boolean值
+            //规则：1.非空即为true 2.非0即为true 3.非null即为true           
+        </script>
+       </head>
+        <body></body>
+</html>

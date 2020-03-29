@@ -1,0 +1,33 @@
+.p1{
+    color:red;
+  }
+  .span1{
+    color:yellow;
+  }
+p.abs{
+    position:absolute;
+    left:150px;
+    top:50px;
+}
+img#i1{
+    position:absolute;
+    left:60px;
+    top:20px;
+    z-index: 1;
+}
+img#i2{
+    position:absolute;
+    left:60px;
+    top:120px;
+    z-index: -1;
+}
+p.r{
+    position:relative;
+    left:150px;
+    top:50px;
+}
+/*文字向左浮动*/
+.f{float:left;}
+input{
+    width: 50px;
+}
